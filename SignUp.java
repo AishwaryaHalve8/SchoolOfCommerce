@@ -1,17 +1,26 @@
 package com.aish.hi.weship;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class SignUp extends ActionBarActivity {
-
+public class SignUp extends Activity implements View.OnClickListener {
+    Intent i;
+    Button sign_up_for_drivers;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
+        i=new Intent(SignUp.this,Driver_Sign_Up.class);
+        sign_up_for_drivers= (Button) findViewById(R.id.fordriversignup);
+        sign_up_for_drivers.setOnClickListener(this);
+
     }
 
 
@@ -35,5 +44,10 @@ public class SignUp extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        startActivity(i);
     }
 }
