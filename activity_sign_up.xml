@@ -1,26 +1,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
     tools:context="com.aish.hi.weship.SignUp"
     android:orientation="vertical"
     android:background="@drawable/swirl_pattern">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="339dp"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:orientation="vertical"
         android:background="#D9ffffff"
         >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/user"
+            android:layout_gravity="center_horizontal"/>
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/mobileemail"
-            android:hint="enter 10 digit mobile no. or email"/>
+            android:hint="enter 10 digit mobile no."/>
 
         <EditText
             android:layout_width="fill_parent"
@@ -52,13 +57,7 @@
             >
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:layout_gravity="left"
-                android:text="forgot password?"
-                android:id="@+id/forgotpassword" />
+
 
 
             </LinearLayout>
@@ -75,7 +74,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:weightSum="1"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_gravity="bottom"
             android:layout_weight="0.02">
 
@@ -86,6 +85,8 @@
                 android:text="SIGN UP"
                 android:textSize="20dp"
                 android:id="@+id/signupbutton"
+                android:background="#000000"
+                android:textColor="#ffffff"
                 android:layout_gravity="bottom"
                 android:layout_weight="0.53" />
 
@@ -93,8 +94,10 @@
                 android:textSize="20dp"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text="FOR DRIVERS"
-                android:id="@+id/fordriverlogin"
+                android:text="DRIVERS"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:id="@+id/fordriversignup"
                 android:layout_gravity="bottom"
                 android:layout_weight="0.53" />
 
