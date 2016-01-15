@@ -10,13 +10,21 @@
 tools:context="com.aish.hi.weship.Driver_Sign_Up">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="357dp"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:orientation="vertical"
         android:background="#D9ffffff"
         >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/driver"
+            android:layout_gravity="center_horizontal"/>
+
+
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -45,7 +53,8 @@ tools:context="com.aish.hi.weship.Driver_Sign_Up">
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/vehicleno"
-            android:hint="enter you vehicle number"/>
+            android:hint="enter you vehicle number"
+            />
 
 
     </LinearLayout>
@@ -76,6 +85,8 @@ tools:context="com.aish.hi.weship.Driver_Sign_Up">
             android:layout_height="wrap_content"
             android:weightSum="1"
             android:orientation="vertical"
+            android:background="#000000"
+            android:textColor="#ffffff"
             android:layout_gravity="bottom"
             android:layout_weight="0.02">
 
@@ -85,6 +96,8 @@ tools:context="com.aish.hi.weship.Driver_Sign_Up">
                 android:layout_height="wrap_content"
                 android:text="SIGN UP"
                 android:textSize="20dp"
+                android:background="#000000"
+                android:textColor="#ffffff"
                 android:id="@+id/signupbuttonofdriver"
                 android:layout_gravity="bottom"
                 android:layout_weight="0.53" />
